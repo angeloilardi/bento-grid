@@ -3,7 +3,7 @@ import aicontent from "/public/images/illustration-ai-content.webp"
 
 export default function Home() {
   return (
-    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 lg:max-h-screen mx-auto lg:max-w-6xl md:grid-cols-8 md:grid-rows-3 md:h-fit md:gap-4 overflow-hidden">
+    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 lg:max-h-screen mx-auto lg:max-w-6xl md:grid-cols-8  md:h-fit md:gap-4 overflow-hidden  md:grid-rows-[35%_45%_20%]">
       {/* 01 */}
       <div className="rounded-lg bg-purple-500 p-10 justify-items-center grid lg:col-start-2 lg:col-span-2 lg:row-span-4 lg:row-start-1 md:col-span-4 md:row-span-1">
         <p className="text-white text-5xl font-medium text-center">
@@ -31,7 +31,7 @@ export default function Home() {
         </p>
       </div>
       {/* 03 */}
-      <div className="bg-yellow-500 px-4 pt-4 grid rounded-lg gap-4 lg:row-start-5 lg:row-span-3 overflow-hidden lg:col-start-3 lg:col-span-1 md:col-start-1 md:col-span-3">
+      <div className="bg-yellow-500 px-4 pt-4 grid rounded-lg gap-4 lg:row-start-5 lg:row-span-3 overflow-hidden lg:col-start-3 lg:col-span-1 md:col-start-5 md:col-span-4 md:row-start-3">
         <p className="text-black text-3xl font-medium">
           Maintain a consistent posting schedule.
         </p>
@@ -43,7 +43,7 @@ export default function Home() {
         />
       </div>
       {/* 04 */}
-      <div className="bg-purple-100 rounded-lg p-4 gap-6 grid justify-items-center text-center lg:col-start-4 lg:row-span-7 lg:col-span-1 lg:row-start-1 md:col-start-4 md:col-span-3">
+      <div className="bg-purple-100 rounded-lg p-4 gap-6 grid justify-items-center text-center lg:col-start-4 lg:row-span-7 lg:col-span-1 lg:row-start-1 md:col-start-4 md:col-span-3 relative">
         <p className="text-black text-3xl font-medium">
           Schedule to social media.
         </p>
@@ -52,6 +52,8 @@ export default function Home() {
           alt={""}
           height={270}
           width={300}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="md-w-40%"
         />
         <p className="text-black font-medium text-lg">
           Optimize post timings to publish content at the perfect time for your
@@ -59,12 +61,13 @@ export default function Home() {
         </p>
       </div>
       {/* 05 */}
-      <div className="bg-purple-500 rounded-lg p-6 grid justify-items-center gap-10 lg:col-start-3 lg:col-span-2 lg:row-span-3 lg:grid-flow-col lg:row-start-8 md:col-span-4 md:col-start-1">
+      <div className="bg-purple-500 rounded-lg p-6 grid md:grid-cols-2 justify-items-center gap-10 lg:col-start-3 lg:col-span-2 lg:row-span-3 md:grid-flow-col lg:row-start-8 md:col-span-4 md:col-start-1">
         <Image
           src="/images/illustration-grow-followers.webp"
           alt={""}
           height={200}
           width={230}
+          className="md:w-full"
         />
         <p className="text-white text-3xl font-medium">
           Grow followers with non-stop content.
@@ -79,7 +82,6 @@ export default function Home() {
           alt={""}
           height={70}
           width={185}
-          sizes="(max-width: 1024px) 50px"
         />
       </div>
       {/* 07 */}
@@ -96,7 +98,7 @@ export default function Home() {
         />
       </div>
       {/* 08 */}
-      <div className="bg-yellow-500 rounded-lg flex flex-col p-6 lg:col-start-1 lg:col-span-1 lg:row-start-6 lg:row-span-5 gap-6 overflow-hidden md:col-start-5 md:col-span-4">
+      <div className="bg-yellow-500 rounded-lg flex flex-col p-6 lg:col-start-1 lg:col-span-1 lg:row-start-6 lg:row-span-5 gap-6 overflow-hidden  md:col-start-1 md:col-span-3 md:row-start-2">
         <p className="text-black text-3xl font-medium">
           Write your content using AI.
         </p>
