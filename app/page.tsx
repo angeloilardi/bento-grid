@@ -3,7 +3,7 @@ import aicontent from "/public/images/illustration-ai-content.webp"
 
 export default function Home() {
   return (
-    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 lg:max-h-screen mx-auto lg:max-w-6xl md:grid-cols-8 md:grid-rows-3 md:h-fit md:gap-3 overflow-hidden">
+    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 lg:max-h-screen mx-auto lg:max-w-6xl md:grid-cols-8 md:grid-rows-3 md:h-fit md:gap-4 overflow-hidden">
       {/* 01 */}
       <div className="rounded-lg bg-purple-500 p-10 justify-items-center grid lg:col-start-2 lg:col-span-2 lg:row-span-4 lg:row-start-1 md:col-span-4 md:row-span-1">
         <p className="text-white text-5xl font-medium text-center">
@@ -71,7 +71,7 @@ export default function Home() {
         </p>
       </div>
       {/* 06 */}
-      <div className="bg-white rounded-lg p-6 grid gap-5 lg:row-start-8 lg:row-span-3 md:col-span-2 md:col-start-7 md:row-start-2">
+      <div className="bg-white rounded-lg p-6 grid gap-5 lg:row-start-8 lg:row-span-3 lg:col-start-2 lg:col-span-1 md:col-span-2 md:col-start-7 md:row-start-2">
         <p className="text-black text-4xl font-medium">{">56%"}</p>
         <p className="text-black">faster audience growth</p>
         <Image
@@ -79,6 +79,7 @@ export default function Home() {
           alt={""}
           height={70}
           width={185}
+          sizes="(max-width: 1024px) 50px"
         />
       </div>
       {/* 07 */}
@@ -95,7 +96,7 @@ export default function Home() {
         />
       </div>
       {/* 08 */}
-      <div className="bg-yellow-500 rounded-lg flex flex-col p-6 lg:col-start-1 lg:row-start-6 lg:row-span-5 gap-6 overflow-hidden md:col-start-5 md:col-span-4">
+      <div className="bg-yellow-500 rounded-lg flex flex-col p-6 lg:col-start-1 lg:col-span-1 lg:row-start-6 lg:row-span-5 gap-6 overflow-hidden md:col-start-5 md:col-span-4">
         <p className="text-black text-3xl font-medium">
           Write your content using AI.
         </p>
