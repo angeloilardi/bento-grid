@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmsans.className} antialiased bg-slate-200 overflow-hidden`}
+        className={`${dmsans.className} antialiased bg-slate-200 overflow-auto h-fit`}
       >
         {children}
       </body>

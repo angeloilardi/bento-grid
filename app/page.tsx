@@ -1,10 +1,11 @@
 import Image from "next/image";
+import aicontent from "/public/images/illustration-ai-content.webp"
 
 export default function Home() {
   return (
-    <div className="grid px-4 py-10 gap-8 md:grid-cols-4 md:grid-rows-6 md:max-h-screen">
+    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 lg:max-h-screen mx-auto lg:max-w-6xl md:grid-cols-8 md:grid-rows-3 md:h-fit md:gap-3 overflow-hidden">
       {/* 01 */}
-      <div className="rounded-lg bg-purple-500 p-10 justify-items-center grid md:col-start-2 md:col-span-2 md:row-span-2">
+      <div className="rounded-lg bg-purple-500 p-10 justify-items-center grid lg:col-start-2 lg:col-span-2 lg:row-span-4 lg:row-start-1 md:col-span-4 md:row-span-1">
         <p className="text-white text-5xl font-medium text-center">
           Social Media <span className="text-yellow-500">10x</span>{" "}
           <span className="italic">Faster</span> with AI
@@ -18,7 +19,7 @@ export default function Home() {
         <p className="text-white text-lg">Over 4,000 5-star reviews</p>
       </div>
       {/* 02 */}
-      <div className="bg-white rounded-lg p-4 grid gap-4 md:row-start-3 md:row-span-2">
+      <div className="bg-white rounded-lg p-4 grid gap-4 lg:row-start-5 lg:row-span-3 lg:col-start-2 lg:col-span-1 md:row-start-1 md:col-span-2 md:col-start-5">
         <Image
           src="/images/illustration-multiple-platforms.webp"
           alt={""}
@@ -30,7 +31,7 @@ export default function Home() {
         </p>
       </div>
       {/* 03 */}
-      <div className="bg-yellow-500 px-4 pt-4 grid rounded-lg gap-4 md:row-start-3 md:row-span-2">
+      <div className="bg-yellow-500 px-4 pt-4 grid rounded-lg gap-4 lg:row-start-5 lg:row-span-3 overflow-hidden lg:col-start-3 lg:col-span-1 md:col-start-1 md:col-span-3">
         <p className="text-black text-3xl font-medium">
           Maintain a consistent posting schedule.
         </p>
@@ -42,7 +43,7 @@ export default function Home() {
         />
       </div>
       {/* 04 */}
-      <div className="bg-purple-100 rounded-lg p-4 gap-6 grid justify-items-center text-center md:col-start-4 md:row-span-4">
+      <div className="bg-purple-100 rounded-lg p-4 gap-6 grid justify-items-center text-center lg:col-start-4 lg:row-span-7 lg:col-span-1 lg:row-start-1 md:col-start-4 md:col-span-3">
         <p className="text-black text-3xl font-medium">
           Schedule to social media.
         </p>
@@ -58,7 +59,7 @@ export default function Home() {
         </p>
       </div>
       {/* 05 */}
-      <div className="bg-purple-500 rounded-lg p-6 grid justify-items-center gap-10 md:col-start-3 md:col-span-2 md:row-span-2 md:grid-flow-col">
+      <div className="bg-purple-500 rounded-lg p-6 grid justify-items-center gap-10 lg:col-start-3 lg:col-span-2 lg:row-span-3 lg:grid-flow-col lg:row-start-8 md:col-span-4 md:col-start-1">
         <Image
           src="/images/illustration-grow-followers.webp"
           alt={""}
@@ -70,9 +71,9 @@ export default function Home() {
         </p>
       </div>
       {/* 06 */}
-      <div className="bg-white rounded-lg p-6 grid gap-5 md:row-start-5 md:row-span-2">
-        <p className="text-black text-4xl">{">56%"}</p>
-        <p className="">faster audience growth</p>
+      <div className="bg-white rounded-lg p-6 grid gap-5 lg:row-start-8 lg:row-span-3 md:col-span-2 md:col-start-7 md:row-start-2">
+        <p className="text-black text-4xl font-medium">{">56%"}</p>
+        <p className="text-black">faster audience growth</p>
         <Image
           src="/images/illustration-audience-growth.webp"
           alt={""}
@@ -81,7 +82,7 @@ export default function Home() {
         />
       </div>
       {/* 07 */}
-      <div className="bg-yellow-100 rounded-lg grid p-8 gap-5 md:order-first md:row-start-1 md:row-end-4 md:col-span-1 md:col-start-1">
+      <div className="bg-yellow-100 rounded-lg grid p-8 gap-5 lg:row-start-1 lg:row-span-5 lg:col-span-1 lg:col-start-1 md:col-start-7 md:row-start-1 md:col-span-2">
         <p className="text-black text-3xl font-medium">
           Create and schedule content{" "}
           <span className="italic text-purple-500">quicker.</span>
@@ -94,16 +95,11 @@ export default function Home() {
         />
       </div>
       {/* 08 */}
-      <div className="bg-yellow-500 rounded-lg grid p-6 gap- md:-order-2 md:col-start-1 md:row-start-4 md:row-span-3">
+      <div className="bg-yellow-500 rounded-lg flex flex-col p-6 lg:col-start-1 lg:row-start-6 lg:row-span-5 gap-6 overflow-hidden md:col-start-5 md:col-span-4">
         <p className="text-black text-3xl font-medium">
           Write your content using AI.
         </p>
-        <Image
-          src="/images/illustration-ai-content.webp"
-          alt={""}
-          height={220}
-          width={220}
-        />
+        <Image src={aicontent} alt={""} />
       </div>
     </div>
   );
