@@ -3,7 +3,7 @@ import aicontent from "/public/images/illustration-ai-content.webp"
 
 export default function Home() {
   return (
-    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 lg:max-h-screen mx-auto lg:max-w-6xl md:grid-cols-8  md:h-fit md:gap-4 overflow-hidden  md:grid-rows-[35%_45%_20%]">
+    <div className="grid px-4 py-10 gap-8 lg:grid-cols-4 lg:grid-rows-10 lg:gap-8 xl:max-h-screen mx-auto xl:max-w-6xl md:grid-cols-8  md:h-fit md:gap-4 overflow-hidden  md:grid-rows-[35%_45%_20%] auto-cols-max auto-rows-max">
       {/* 01 */}
       <div className="rounded-lg bg-purple-500 p-10 justify-items-center grid lg:col-start-2 lg:col-span-2 lg:row-span-4 lg:row-start-1 md:col-span-4 md:row-span-1">
         <p className="text-white text-5xl font-medium text-center">
@@ -19,12 +19,13 @@ export default function Home() {
         <p className="text-white text-lg">Over 4,000 5-star reviews</p>
       </div>
       {/* 02 */}
-      <div className="bg-white rounded-lg p-4 grid gap-4 lg:row-start-5 lg:row-span-3 lg:col-start-2 lg:col-span-1 md:row-start-1 md:col-span-2 md:col-start-5">
+      <div className="bg-white rounded-lg p-4 grid gap-4 lg:row-start-5 lg:row-span-3 lg:col-start-2 lg:col-span-1 md:row-start-1 md:col-span-2 md:col-start-5 ">
         <Image
           src="/images/illustration-multiple-platforms.webp"
           alt={""}
           height={150}
           width={300}
+          className="object-cover"
         />
         <p className="text-black text-3xl font-medium">
           Manage multiple accounts and platforms.
@@ -43,7 +44,7 @@ export default function Home() {
         />
       </div>
       {/* 04 */}
-      <div className="bg-purple-100 rounded-lg p-4 gap-6 grid justify-items-center text-center lg:col-start-4 lg:row-span-7 lg:col-span-1 lg:row-start-1 md:col-start-4 md:col-span-3 relative">
+      <div className="bg-purple-100 rounded-lg p-4 lg:gap-3 gap-6 grid justify-items-center text-center lg:col-start-4 lg:row-span-7 lg:col-span-1 lg:row-start-1 md:col-start-4 md:col-span-3 lg:text-left">
         <p className="text-black text-3xl font-medium">
           Schedule to social media.
         </p>
@@ -67,14 +68,14 @@ export default function Home() {
           alt={""}
           height={200}
           width={230}
-          className="md:w-full"
+          className="max-h-[90%]"
         />
         <p className="text-white text-3xl font-medium">
           Grow followers with non-stop content.
         </p>
       </div>
       {/* 06 */}
-      <div className="bg-white rounded-lg p-6 grid gap-5 lg:row-start-8 lg:row-span-3 lg:col-start-2 lg:col-span-1 md:col-span-2 md:col-start-7 md:row-start-2">
+      <div className="bg-white rounded-lg p-6 flex flex-col gap-5 lg:row-start-8 lg:row-span-3 lg:col-start-2 lg:col-span-1 md:col-span-2 md:col-start-7 md:row-start-2 lg:gap-2">
         <p className="text-black text-4xl font-medium">{">56%"}</p>
         <p className="text-black">faster audience growth</p>
         <Image
@@ -82,6 +83,8 @@ export default function Home() {
           alt={""}
           height={70}
           width={185}
+          className="lg:max-w-[100px]"
+          sizes="(max-width: 768px) 10px"
         />
       </div>
       {/* 07 */}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {DM_Sans} from "next/font/google";
 import "./globals.css";
 
-const dmsans = DM_Sans ({subsets:["latin"], weight: ["400", "500"]})
+const dmsans = DM_Sans ({subsets:["latin"]})
 
 
 export const metadata: Metadata = {
